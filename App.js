@@ -12,18 +12,25 @@ import {
   Platform,
 } from "react-native";
 
+import {
+  useDeviceOrientation,
+  useDimensions,
+} from "@react-native-community/hooks";
+
 export default function App() {
   const handlePress = () => {
     console.log("Text pressed");
   };
 
+  const { landscape } = useDeviceOrientation();
+
   return (
     <SafeAreaView style={styles.container}>
-      <Text numberOfLines={1} onPress={handlePress}>
+      {/* <Text numberOfLines={1} onPress={handlePress}>
         Open up App.js to start working on your app!
-      </Text>
+      </Text> */}
       {/* <Image source={require("./assets/favicon.png")} /> */}
-      <TouchableOpacity>
+      {/* <TouchableOpacity>
         <Image
           source={{
             width: 200,
@@ -31,8 +38,8 @@ export default function App() {
             uri: "https://picsum.photos/200/300",
           }}
         />
-      </TouchableOpacity>
-      <Button
+      </TouchableOpacity> */}
+      {/* <Button
         color="orange"
         title="Click me"
         // SIMPLE ALERT
@@ -50,7 +57,14 @@ export default function App() {
         //     console.log(text)
         //   )
         // }
-      />
+      /> */}
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          height: landscape ? "100%" : "30%",
+          width: "100%",
+        }}
+      ></View>
     </SafeAreaView>
   );
 }
