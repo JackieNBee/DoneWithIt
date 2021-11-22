@@ -19,6 +19,7 @@ import {
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
 import AppText from "./app/components/AppText";
+import AppButton from "./app/components/AppButton";
 
 export default function App() {
   const handlePress = () => {
@@ -31,7 +32,8 @@ export default function App() {
     <View style={styles.container}>
       {/* <WelcomeScreen /> */}
       {/* <ViewImageScreen /> */}
-      <AppText>I love React Native ❤️</AppText>
+      {/* <AppText>I love React Native ❤️</AppText> */}
+      <AppButton title="Login" onPress={() => console.log("Tapped")} />
     </View>
   );
 }
