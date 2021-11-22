@@ -18,6 +18,7 @@ import {
 } from "@react-native-community/hooks";
 import WelcomeScreen from "./app/screens/WelcomeScreen";
 import ViewImageScreen from "./app/screens/ViewImageScreen";
+import AppText from "./app/components/AppText";
 
 export default function App() {
   const handlePress = () => {
@@ -29,7 +30,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       {/* <WelcomeScreen /> */}
-      <ViewImageScreen />
+      {/* <ViewImageScreen /> */}
+      <AppText>I love React Native ❤️</AppText>
     </View>
   );
 }
@@ -37,5 +39,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
