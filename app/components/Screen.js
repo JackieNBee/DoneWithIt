@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     //paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0, // I cannot use && approach... that's strange
     // other approach
     paddingTop: Constants.statusBarHeight, // doesn't affect SafeAreaView on Apple Devices -> no extra padding
+    flex: 1,
   },
 });
 
