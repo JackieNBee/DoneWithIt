@@ -31,6 +31,7 @@ function MessagesScreen(props) {
             title={item.title}
             subTitle={item.description}
             image={item.image}
+            onPress={() => console.log("Message selected", item)}
           />
         )}
         // to add a separator between items without one at the bottom
