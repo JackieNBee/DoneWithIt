@@ -8,7 +8,7 @@ function ListItem({
   title,
   subTitle,
   image,
-  ImageComponent, // React component (e.g. an Icon) passed as a prop so we don't pollute with extra props
+  IconComponent, // React component (e.g. an Icon) passed as a prop so we don't pollute with extra props
   onPress,
   renderRightActions,
 }) {
@@ -22,7 +22,7 @@ function ListItem({
       >
         <View style={styles.container}>
           {/* Render a Component passed as a prop */}
-          {ImageComponent}
+          {IconComponent}
           {/* Conditional Rendering */}
           {image && <Image style={styles.image} source={image} />}
           <View style={styles.detailsContainer}>
@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: "row",
     padding: 15,
+    backgroundColor: colors.white, // BREAKING THE RULES: by adding a color this component is less reusable
   },
   detailsContainer: {
     marginLeft: 10,
