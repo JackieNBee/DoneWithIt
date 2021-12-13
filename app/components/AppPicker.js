@@ -29,9 +29,11 @@ function AppPicker({ icon, items, onSelectItem, placeholder, selectedItem }) {
               color={defaultStyles.colors.medium}
             />
           )}
-          <AppText style={styles.text}>
-            {selectedItem ? selectedItem.label : placeholder}
-          </AppText>
+          {selectedItem ? (
+            <AppText style={styles.text}>{selectedItem.label}</AppText>
+          ) : (
+            <AppText style={styles.placeholder}>{placeholder}</AppText>
+          )}
           <MaterialCommunityIcons
             name="chevron-down"
             size={20}
@@ -73,8 +75,12 @@ const styles = StyleSheet.create({
   icon: {
     marginRight: 10,
   },
-  text: {
+  placeholder: {
+    color: defaultStyles.colors.medium,
     flex: 1, // make text component grow and take all the available free space to push the chevron icon to the right
+  },
+  text: {
+    flex: 1,
   },
 });
 
