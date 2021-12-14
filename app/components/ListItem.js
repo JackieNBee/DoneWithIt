@@ -13,6 +13,7 @@ function ListItem({
   IconComponent, // React component (e.g. an Icon) passed as a prop so we don't pollute with extra props
   onPress,
   renderRightActions,
+  showChevron = true,
 }) {
   return (
     <Swipeable renderRightActions={renderRightActions}>
@@ -31,11 +32,13 @@ function ListItem({
             <AppText style={styles.title}>{title}</AppText>
             {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
           </View>
-          <MaterialCommunityIcons
-            name="chevron-right"
-            color={colors.medium}
-            size={25}
-          />
+          {showChevron && (
+            <MaterialCommunityIcons
+              name="chevron-right"
+              color={colors.medium}
+              size={25}
+            />
+          )}
         </View>
       </TouchableHighlight>
     </Swipeable>

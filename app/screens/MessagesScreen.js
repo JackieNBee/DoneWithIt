@@ -47,6 +47,7 @@ function MessagesScreen() {
             renderRightActions={() => (
               <ListItemDeleteAction onPress={() => handleDelete(item)} />
             )}
+            showChevron={true}
           />
         )}
         // to add a separator between items without one at the bottom
