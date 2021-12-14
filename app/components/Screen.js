@@ -8,7 +8,7 @@ import Constants from "expo-constants";
 function Screen({ children, style }) {
   return (
     <SafeAreaView style={[styles.screen, style]}>
-      <View style={style}>{children}</View>
+      <View style={[style, styles.view]}>{children}</View>
     </SafeAreaView>
   );
 }
@@ -18,6 +18,9 @@ const styles = StyleSheet.create({
     //paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0, // I cannot use && approach... that's strange
     // other approach
     paddingTop: Constants.statusBarHeight, // doesn't affect SafeAreaView on Apple Devices -> no extra padding
+    flex: 1,
+  },
+  view: {
     flex: 1,
   },
 });
