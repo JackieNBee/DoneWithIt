@@ -9,8 +9,10 @@ import Screen from "../components/Screen";
 const initialMessages = [
   {
     id: 1,
-    title: "T1",
-    description: "D1",
+    title:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique magna sit amet purus gravida quis blandit turpis cursus. Nulla facilisi nullam vehicula ipsum a arcu. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Ac ut consequat semper viverra nam libero justo laoreet. Aliquet porttitor lacus luctus accumsan tortor posuere ac. At imperdiet dui accumsan sit amet nulla. Ornare lectus sit amet est placerat. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Egestas egestas fringilla phasellus faucibus. In arcu cursus euismod quis viverra nibh. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in. Ut tristique et egestas quis ipsum suspendisse. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dictum non consectetur a erat nam at.",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tristique magna sit amet purus gravida quis blandit turpis cursus. Nulla facilisi nullam vehicula ipsum a arcu. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Eros donec ac odio tempor orci dapibus ultrices in iaculis. Ac ut consequat semper viverra nam libero justo laoreet. Aliquet porttitor lacus luctus accumsan tortor posuere ac. At imperdiet dui accumsan sit amet nulla. Ornare lectus sit amet est placerat. Sed viverra tellus in hac habitasse platea dictumst vestibulum rhoncus. Egestas egestas fringilla phasellus faucibus. In arcu cursus euismod quis viverra nibh. Aliquam eleifend mi in nulla posuere sollicitudin aliquam. Pretium lectus quam id leo in. Ut tristique et egestas quis ipsum suspendisse. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Dictum non consectetur a erat nam at.",
     image: require("../assets/mosh.jpg"),
   },
   {
